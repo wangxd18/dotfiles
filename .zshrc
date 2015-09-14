@@ -85,6 +85,8 @@ source $ZSH/oh-my-zsh.sh
 
 #MacVim
 export VIM_APP_DIR=/Applications
+alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
 #finished MacVim environment
 
 alias fuck='$(thefuck $(fc -ln -1))'
@@ -146,3 +148,9 @@ alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
+alias sudo='sudo '
+
+## chelaile repo deploy
+alias gar='git branch release ; git push origin release'
+alias gdr='git branch -d release ; git push origin :release'
+alias gsrv='grunt serve'
