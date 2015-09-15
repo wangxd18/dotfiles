@@ -1,21 +1,47 @@
 {
-  "parser": "babel-eslint",
-  "env": {
-    "browser": true,
-    "node": true
-  },
-  "settings": {
-    "ecmascript": 6,
-    "jsx": true
-  },
-  "plugins": [
-    "react"
-  ],
-  "rules": {
-    "strict": 0,
-    "quotes": 0,
-    "no-unused-vars": 0,
-    "camelcase": 0,
-    "no-underscore-dangle": 0
-  }
+    "rules": {
+        "indent": 0,
+        "no-console": 0,
+        "no-unused-vars": 1,
+        "quotes": [
+            1,
+            "single"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ]
+    },
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+        "jsx": true,
+        "experimentalObjectRestSpread": true
+    },
+    "plugins": [
+        "react"
+    ],
+    "globals": {
+      "angular"    : false, //angular
+      "FastClick"  : false, //FastClick
+      "ng"         : false, //angular
+      "wx"         : false, //wechat
+      "confirm"    : false,
+      "it"         : false,
+      "xit"        : false,
+      "describe"   : false,
+      "xdescribe"  : false,
+      "beforeEach" : false,
+      "afterEach"  : false,
+      "expect"     : false,
+      "spyOn"      : false
+    }
 }

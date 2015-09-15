@@ -151,6 +151,15 @@ alias -s bz2='tar -xjvf'
 alias sudo='sudo '
 
 ## chelaile repo deploy
+alias gcam='git commit -am'
 alias gar='git branch release ; git push origin release'
 alias gdr='git branch -d release ; git push origin :release'
 alias gsrv='grunt serve'
+
+echo
+echo "=============== Quote Of The Day ==============="
+echo
+fortune
+echo
+echo "================================================"
+echo
