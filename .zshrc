@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/carl/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -84,12 +84,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #MacVim
-export VIM_APP_DIR=/Applications
-alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
+#export VIM_APP_DIR=/Applications
+#alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+#alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
 #finished MacVim environment
-
-alias fuck='$(thefuck $(fc -ln -1))'
 
 alias ll='ls -alG'
 alias l='ls -G'
@@ -127,7 +125,7 @@ alias cpuinfo='lscpu'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-source ~/.profile
+#source ~/.bash_profile
 
 # Add GHC 7.10.1 to the PATH, via https://ghcformacosx.github.io/
 export GHC_DOT_APP="/Applications/ghc-7.10.1.app"
@@ -150,16 +148,4 @@ alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 alias sudo='sudo '
 
-## chelaile repo deploy
-alias gcam='git commit -am'
-alias gar='git branch release ; git push origin release'
-alias gdr='git branch -d release ; git push origin :release'
-alias gsrv='grunt serve'
 
-echo
-echo "=============== Quote Of The Day ==============="
-echo
-fortune
-echo
-echo "================================================"
-echo
